@@ -3,22 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Successful</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Responsive Identity Backup Solution</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <br>
-    <br>
-    <br>
     <div class="container">
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-mod-6 main">
-                <h1>Registration Successful</h1>
-            </div>
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <h2>Backup Portal</h2>
+            <ul>
+                <li><a href="#dashboard" class="active">Dashboard</a></li>
+                <li><a href="#scheduled-backups">Scheduled Backups</a></li>
+                <li><a href="#restore">Restore</a></li>
+                <li><a href="#audit-logs">Audit Logs</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="section active">
+                <h1>Dashboard</h1>
+                <div class="dashboard-cards">
+                    <div class="card">
+                        <h3>Backup Status</h3>
+                        <p>Current Status: <strong>Healthy</strong></p>
+                        <button>View Details</button>
+                    </div>
+                    <div class="card">
+                        <h3>Recent Activity</h3>
+                        <ul>
+                            <li>Backup Completed: 10/20/2024</li>
+                            <li>Backup Scheduled: 10/25/2024</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scheduled Backups Section -->
+            <section id="scheduled-backups" class="section">
+                <h1>Scheduled Backups</h1>
+                <div class="card">
+                    <h3>Upcoming Backups</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10/24/2024</td>
+                                <td>02:00 AM</td>
+                                <td>Scheduled</td>
+                            </tr>
+                            <tr>
+                                <td>10/25/2024</td>
+                                <td>02:00 AM</td>
+                                <td>Scheduled</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Restore Section -->
+            <section id="restore" class="section">
+                <h1>Restore Backup</h1>
+                <div class="card">
+                    <h3>Select Backup to Restore</h3>
+                    <select>
+                        <option>Backup #1 - 10/20/2024</option>
+                        <option>Backup #2 - 10/19/2024</option>
+                    </select>
+                    <button>Restore Now</button>
+                </div>
+            </section>
+
+            <!-- Audit Logs Section -->
+            <section id="audit-logs" class="section">
+                <h1>Audit Logs</h1>
+                <div class="card">
+                    <h3>Activity Logs</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Backup Completed</td>
+                                <td>10/20/2024</td>
+                                <td>Success</td>
+                            </tr>
+                            <tr>
+                                <td>Restore Attempted</td>
+                                <td>10/19/2024</td>
+                                <td>Failed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Settings Section -->
+            <section id="settings" class="section">
+                <h1>Settings</h1>
+                <div class="card">
+                    <h3>Configure Backup Preferences</h3>
+                    <label for="frequency">Backup Frequency:</label>
+                    <select id="frequency">
+                        <option>Daily</option>
+                        <option>Weekly</option>
+                        <option>Monthly</option>
+                    </select>
+                    <button>Save Settings</button>
+                </div>
+            </section>
         </div>
     </div>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>

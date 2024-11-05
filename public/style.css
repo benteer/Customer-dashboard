@@ -1,35 +1,74 @@
-.main{
-    padding: 20px;
-    font-family: Arial;
-    box-shadow: 5px  5px 7px 5px #8888;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef; /* Light gray background */
+    margin: 0;
+    padding: 0;
 }
 
-.main h1{
-    font-size: 36px;
-    text-align: center;
-    font-family: Arial;
+.container {
+    max-width: 450px; /* Wider form for more space */
+    margin: 50px auto; /* Center the form vertically and horizontally */
+    padding: 30px;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    margin-top: 10px;
+    
 
 }
 
-input{
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    font-size: 20px;
-    padding: 12px 20px;
-    margin: 8px;
-    border: none;
-    border-bottom: 2px solid #764776;
-
+h2 {
+    text-align: center; /* Center the heading */
+    color: #343a40; /* Dark gray text for contrast */
+    margin-bottom: 20px; /* Space below heading */
 }
 
-input[type=submit]{
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    background-color: #764776;
-    border:none;
-    color: white;
-    padding: 16px 32px;
-    margin: 4px 2px;
-    border-radius: 10px;
-
+form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Stack inputs vertically */
 }
+
+input {
+    margin-bottom: 15px; /* Space between inputs */
+    padding: 12px; /* Padding inside inputs */
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Increase font size for readability */
+}
+
+input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+}
+
+button {
+    padding: 12px; /* Padding for button */
+    background-color: #007bff; /* Primary color for button */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Increase font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.footer {
+    text-align: center; /* Center the footer text */
+    margin-top: 20px; /* Space above footer */
+    color: #6c757d; /* Gray color for footer text */
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Responsive width for smaller screens */
+    }
+}
+
